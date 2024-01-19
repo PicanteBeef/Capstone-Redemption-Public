@@ -9,6 +9,9 @@
   import contentful from 'contentful';
   import Moment from "moment";
   import supabase from "$lib/supabaseClient.js";
+  import img1 from "$lib/1.png";
+  import img2 from "$lib/2.png";
+  import img3 from "$lib/3.png";
 
   //Styling Rizz
   const smoothScroll = (target, event) => {
@@ -511,13 +514,13 @@
         options={{ rewind: true, type: "loop", autoplay: "play" }}
       >
         <SplideSlide>
-          <img style="width: 100%;" src="/src/lib/1.png" alt="" />
+          <img style="width: 100%;" src={img1} alt="" />
         </SplideSlide>
         <SplideSlide>
-          <img style="width: 100%;" src="/src/lib/2.png" alt="" />
+          <img style="width: 100%;" src={img2} alt="" />
         </SplideSlide>
         <SplideSlide>
-          <img style="width: 100%;" src="/src/lib/3.png" alt="" />
+          <img style="width: 100%;" src={img3} alt="" />
         </SplideSlide>
       </Splide>
       <!-- /END THE CAROUSEL|MAIN INFO -->
