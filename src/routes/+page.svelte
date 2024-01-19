@@ -3,6 +3,7 @@
   import "@splidejs/svelte-splide/css";
   import { onMount } from "svelte";
   import { webMap } from "./script.js";
+  import { initMap } from "./script.js";
   import { createClient } from "contentful";
   import { scrollTo } from "$lib/smoothPan.js";
   import Saos from "saos";
@@ -13,6 +14,8 @@
   import img2 from "$lib/2.png";
   import img3 from "$lib/3.png";
 
+  window.initMap = initMap;
+  
   //Styling Rizz
   const smoothScroll = (target, event) => {
     event.preventDefault();
