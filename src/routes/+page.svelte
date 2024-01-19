@@ -6,6 +6,7 @@
   import { createClient } from "contentful";
   import { scrollTo } from "$lib/smoothPan.js";
   import Saos from "saos";
+  import contentful from 'contentful';
   import Moment from "moment";
   import supabase from "$lib/supabaseClient.js";
 
@@ -16,7 +17,7 @@
   };
 
   //Main Functions
-  const contentfulClient = createClient({
+  const contentfulClient = contentful.createClient({
     space: "g4027mkrwnn3",
     accessToken: "1LemAsBMnTt5PAJtk846SrUCQScy-w-eynZKx5_WpuA",
   });
@@ -189,10 +190,10 @@
 
       if (error) {
         console.error("Error submitting data:", error);
-        // setNotification({ type: "error", message: "Error submitting data." });
+        setNotification({ type: "error", message: "Error submitting data." });
       } else {
         console.log("Data submitted successfully:", data);
-        // setNotification({
+        setNotification({
           type: "success",
           message: "Entry submitted successfully.",
         });
@@ -204,7 +205,7 @@
       }
     } catch (error) {
       console.error("Error submitting data:", error);
-      // setNotification({ type: "error", message: "Error submitting data." });
+      setNotification({ type: "error", message: "Error submitting data." });
     }
   };
 </script>
