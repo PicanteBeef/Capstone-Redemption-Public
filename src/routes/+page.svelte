@@ -222,7 +222,7 @@
     <meta name="generator" content="Hugo 0.72.0" />
     <title>BDMS Public</title>
 
-    <link rel="stylesheet" href="/src/lib/style.css" />
+    
     <link
       rel="canonical"
       href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/"
@@ -243,8 +243,11 @@
     <!-- API KEY -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9hnYtw84Sg78NaJjVw8qv0gkA2-IriC8&callback=initMap"
+      async
       defer
     ></script>
+
+    <script type="module" src="./script.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link
