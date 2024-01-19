@@ -189,10 +189,10 @@
 
       if (error) {
         console.error("Error submitting data:", error);
-        setNotification({ type: "error", message: "Error submitting data." });
+        // setNotification({ type: "error", message: "Error submitting data." });
       } else {
         console.log("Data submitted successfully:", data);
-        setNotification({
+        // setNotification({
           type: "success",
           message: "Entry submitted successfully.",
         });
@@ -204,7 +204,7 @@
       }
     } catch (error) {
       console.error("Error submitting data:", error);
-      setNotification({ type: "error", message: "Error submitting data." });
+      // setNotification({ type: "error", message: "Error submitting data." });
     }
   };
 </script>
